@@ -10,10 +10,12 @@ public class App {
             if (receivedData.equalsIgnoreCase("exit")) {
                 break;
             }
-            StringBuilder dataReverser = new StringBuilder();
-            dataReverser.append(receivedData);
-            dataReverser.reverse();
-            System.out.println(dataReverser);
+            System.out.println(dataReverser(receivedData));
         }
+    }
+    public static StringBuilder dataReverser(String receivedWord) {
+        StringBuilder wordReverser = new StringBuilder();
+        wordReverser.append(receivedWord);
+        return wordReverser.reverse();
     }
 }
